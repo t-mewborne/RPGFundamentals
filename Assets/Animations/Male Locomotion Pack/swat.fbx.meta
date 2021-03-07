@@ -6,7 +6,37 @@ ModelImporter:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Soldier_Body_diffuse
+    second: {fileID: 2800000, guid: 196d41f38ba1240e8b7c6ea97f30dd98, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Soldier_Body_normal
+    second: {fileID: 2800000, guid: b60bac10e3c3848a49cc5f50f1bd4c04, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Soldier_Body_specular
+    second: {fileID: 2800000, guid: 072afd0821e844c7baf32d8c1701bfae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Soldier_head_diffuse
+    second: {fileID: 2800000, guid: a60931c87ba3d461bb81fbea0e0ce585, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Soldier_head_normal
+    second: {fileID: 2800000, guid: 01e8c1a31eefd442a868d1f6852db878, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Soldier_head_specular
+    second: {fileID: 2800000, guid: 01c097471f60e4035922ba25dcc5a70a, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -71,7 +101,8 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
+  referencedClips:
+  - a3fd3e1079123425587162c7ef78c2c7
   importAnimation: 1
   humanDescription:
     serializedVersion: 3

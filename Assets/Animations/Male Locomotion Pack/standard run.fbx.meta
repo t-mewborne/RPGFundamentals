@@ -21,12 +21,15 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'mixamo.com' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'swat:Neck1' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -76,7 +79,357 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: standard run(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:Hips
+      parentName: standard run(Clone)
+      position: {x: -0.00080565974, y: 0.94032466, z: -0.002656294}
+      rotation: {x: -0.055004936, y: 0.09074881, z: 0.031229805, w: 0.9938631}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:Spine
+      parentName: swat:Hips
+      position: {x: -0, y: 0.092263, z: 0.015771}
+      rotation: {x: 0.13034943, y: -0.10128999, z: -0.021873279, w: 0.98603797}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:Spine1
+      parentName: swat:Spine
+      position: {x: -0, y: 0.16253999, z: -0.001656}
+      rotation: {x: 0.009983429, y: -0.026492883, z: -0.00653104, w: 0.9995778}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:Spine2
+      parentName: swat:Spine1
+      position: {x: -0, y: 0.13639599, z: -0.012922999}
+      rotation: {x: 0.010287938, y: -0.026143502, z: -0.006357011, w: 0.99958503}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:Neck
+      parentName: swat:Spine2
+      position: {x: -0, y: 0.13877401, z: -0.043541998}
+      rotation: {x: -0.032306742, y: 0.0073395898, z: -0.0060153925, w: 0.999433}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:Neck1
+      parentName: swat:Neck
+      position: {x: -0, y: 0.0434, z: 0.009269}
+      rotation: {x: -0.032306727, y: 0.0073395944, z: -0.006015371, w: 0.999433}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:Head
+      parentName: swat:Neck1
+      position: {x: -0, y: 0.040266, z: 0.0085849995}
+      rotation: {x: -0.032306787, y: 0.0073395944, z: -0.006015415, w: 0.999433}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:HeadTop_End
+      parentName: swat:Head
+      position: {x: -0, y: 0.178866, z: 0.001231}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightEye
+      parentName: swat:Head
+      position: {x: 0.030057, y: 0.072618, z: 0.079555996}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftEye
+      parentName: swat:Head
+      position: {x: -0.030057, y: 0.072618, z: 0.079555996}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:Jaw
+      parentName: swat:Head
+      position: {x: -0, y: 0.020302998, z: 0.024561998}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftShoulder
+      parentName: swat:Spine2
+      position: {x: -0.061442, y: 0.10187, z: -0.037932}
+      rotation: {x: 0.0018989944, y: 0.01116835, z: 0.07305411, w: 0.99726367}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftArm
+      parentName: swat:LeftShoulder
+      position: {x: -0.123191, y: -0.01113, z: -0.017934998}
+      rotation: {x: 0.2832866, y: 0.02407194, z: -0.06806657, w: 0.95631385}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftForeArm
+      parentName: swat:LeftArm
+      position: {x: -0.27686998, y: 0, z: 0}
+      rotation: {x: -0.005908697, y: 0.017710013, z: -0.009159204, w: 0.9997838}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHand
+      parentName: swat:LeftForeArm
+      position: {x: -0.278738, y: 0, z: 0}
+      rotation: {x: 0.12341516, y: 0.1211943, z: -0.16158828, w: 0.9715811}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandThumb1
+      parentName: swat:LeftHand
+      position: {x: -0.02421, y: -0.013948999, z: 0.023927}
+      rotation: {x: -0.20348457, y: -0.005397199, z: -0.41818884, w: 0.8852588}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandThumb2
+      parentName: swat:LeftHandThumb1
+      position: {x: -0.034965, y: -0.020186998, z: 0.020186998}
+      rotation: {x: -0.03759954, y: -0.054884806, z: 0.039197497, w: 0.99701434}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandThumb3
+      parentName: swat:LeftHandThumb2
+      position: {x: -0.040114, y: -0.02316, z: 0.02316}
+      rotation: {x: 0.060475066, y: 0.065378934, z: -0.057793483, w: 0.9943482}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandThumb4
+      parentName: swat:LeftHandThumb3
+      position: {x: -0.027443, y: -0.015844, z: 0.015844}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandMiddle1
+      parentName: swat:LeftHand
+      position: {x: -0.104908, y: 0, z: 0}
+      rotation: {x: -0.042699125, y: 0.0014560741, z: 0.066056445, w: 0.9969008}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandMiddle2
+      parentName: swat:LeftHandMiddle1
+      position: {x: -0.057921, y: 0, z: 0}
+      rotation: {x: 0.0000005625188, y: -0.0014972585, z: 0.01465877, w: 0.99989146}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandMiddle3
+      parentName: swat:LeftHandMiddle2
+      position: {x: -0.037132, y: 0, z: 0}
+      rotation: {x: -0.00000017396806, y: -0.0029127868, z: 0.028478164, w: 0.9995902}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandMiddle4
+      parentName: swat:LeftHandMiddle3
+      position: {x: -0.027579, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandIndex1
+      parentName: swat:LeftHand
+      position: {x: -0.105147995, y: -0.0023079999, z: 0.022649}
+      rotation: {x: -0.0120609375, y: 0.02606869, z: 0.06865461, w: 0.9972269}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandIndex2
+      parentName: swat:LeftHandIndex1
+      position: {x: -0.055493, y: 0, z: 0}
+      rotation: {x: 0.00000045727944, y: -0.000927806, z: 0.009091004, w: 0.9999583}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandIndex3
+      parentName: swat:LeftHandIndex2
+      position: {x: -0.033910997, y: 0, z: 0}
+      rotation: {x: 0.00000016612653, y: -0.0030571749, z: 0.02988427, w: 0.9995488}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandIndex4
+      parentName: swat:LeftHandIndex3
+      position: {x: -0.027579, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandRing1
+      parentName: swat:LeftHand
+      position: {x: -0.102408, y: -0.00046599997, z: -0.023141}
+      rotation: {x: -0.040463302, y: -0.0008010863, z: 0.064580135, w: 0.99709153}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandRing2
+      parentName: swat:LeftHandRing1
+      position: {x: -0.054452, y: 0, z: 0}
+      rotation: {x: 0.0000008270143, y: -0.0010198704, z: 0.009971471, w: 0.99994975}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandRing3
+      parentName: swat:LeftHandRing2
+      position: {x: -0.037132, y: 0, z: 0}
+      rotation: {x: -0.000000117273586, y: -0.0031332276, z: 0.030653955, w: 0.9995251}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandRing4
+      parentName: swat:LeftHandRing3
+      position: {x: -0.027579, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandPinky1
+      parentName: swat:LeftHand
+      position: {x: -0.098202996, y: -0.002109, z: -0.044183996}
+      rotation: {x: -0.0358409, y: -0.0034984415, z: 0.06197851, w: 0.99742764}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandPinky2
+      parentName: swat:LeftHandPinky1
+      position: {x: -0.036763, y: 0, z: 0}
+      rotation: {x: 0.00000030174843, y: -0.0018770839, z: 0.018385509, w: 0.99982923}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandPinky3
+      parentName: swat:LeftHandPinky2
+      position: {x: -0.028113, y: 0, z: 0}
+      rotation: {x: -0.0000002596971, y: -0.0029024384, z: 0.028375514, w: 0.99959314}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftHandPinky4
+      parentName: swat:LeftHandPinky3
+      position: {x: -0.019255, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightShoulder
+      parentName: swat:Spine2
+      position: {x: 0.061402, y: 0.10187, z: -0.037932}
+      rotation: {x: 0.024096563, y: -0.06862936, z: -0.10485935, w: 0.9918235}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightArm
+      parentName: swat:RightShoulder
+      position: {x: 0.123231, y: -0.01113, z: -0.017934998}
+      rotation: {x: -0.15491875, y: 0.10462491, z: 0.114583336, w: 0.9756662}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightForeArm
+      parentName: swat:RightArm
+      position: {x: 0.27686998, y: 0, z: 0}
+      rotation: {x: -0.016641881, y: 0.0071254503, z: 0.013623255, w: 0.9997433}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHand
+      parentName: swat:RightForeArm
+      position: {x: 0.278738, y: 0, z: 0}
+      rotation: {x: 0.29514453, y: -0.10825706, z: 0.07078893, w: 0.94665676}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandThumb1
+      parentName: swat:RightHand
+      position: {x: 0.025704, y: -0.012448, z: 0.023192}
+      rotation: {x: -0.25767657, y: -0.07098276, z: 0.22494179, w: 0.93699807}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandThumb2
+      parentName: swat:RightHandThumb1
+      position: {x: 0.035188, y: -0.020316, z: 0.020316}
+      rotation: {x: 0.042452324, y: 0.010926575, z: 0.014189159, w: 0.99893796}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandThumb3
+      parentName: swat:RightHandThumb2
+      position: {x: 0.039451998, y: -0.022778, z: 0.022778}
+      rotation: {x: -0.019452373, y: -0.024128104, z: 0.008450153, w: 0.9994839}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandThumb4
+      parentName: swat:RightHandThumb3
+      position: {x: 0.028415998, y: -0.016406, z: 0.016406}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandIndex1
+      parentName: swat:RightHand
+      position: {x: 0.105773, y: -0.0017499999, z: 0.022874}
+      rotation: {x: -0.047390435, y: -0.0009090305, z: -0.0606717, w: 0.99703175}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandIndex2
+      parentName: swat:RightHandIndex1
+      position: {x: 0.053767998, y: 0, z: 0}
+      rotation: {x: 0.00000055506825, y: 0.0013819844, z: -0.017021798, w: 0.9998542}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandIndex3
+      parentName: swat:RightHandIndex2
+      position: {x: 0.033855, y: 0, z: 0}
+      rotation: {x: 0.0000001994533, y: 0.0022753233, z: -0.02798852, w: 0.9996057}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandIndex4
+      parentName: swat:RightHandIndex3
+      position: {x: 0.027730998, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandMiddle1
+      parentName: swat:RightHand
+      position: {x: 0.10779199, y: 0, z: 0}
+      rotation: {x: -0.04875595, y: 0.00096892554, z: -0.05960357, w: 0.99703026}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandMiddle2
+      parentName: swat:RightHandMiddle1
+      position: {x: 0.056167997, y: 0, z: 0}
+      rotation: {x: 0.00000012293455, y: 0.0009923056, z: -0.012225519, w: 0.99992484}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandMiddle3
+      parentName: swat:RightHandMiddle2
+      position: {x: 0.037364, y: 0, z: 0}
+      rotation: {x: 0.00000072609913, y: 0.0015871313, z: -0.0195085, w: 0.99980843}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandMiddle4
+      parentName: swat:RightHandMiddle3
+      position: {x: 0.028803, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandRing1
+      parentName: swat:RightHand
+      position: {x: 0.103919, y: 0.001048, z: -0.023498999}
+      rotation: {x: -0.077138215, y: 0.00049491227, z: -0.053592034, w: 0.99557894}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandRing2
+      parentName: swat:RightHandRing1
+      position: {x: 0.054013, y: 0, z: 0}
+      rotation: {x: 0.00000010430813, y: 0.0007872764, z: -0.009677033, w: 0.9999529}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandRing3
+      parentName: swat:RightHandRing2
+      position: {x: 0.033915997, y: 0, z: 0}
+      rotation: {x: 0.00000014341407, y: 0.0019770854, z: -0.024294754, w: 0.9997029}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandRing4
+      parentName: swat:RightHandRing3
+      position: {x: 0.029664999, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandPinky1
+      parentName: swat:RightHand
+      position: {x: 0.09791, y: -0.002135, z: -0.043783}
+      rotation: {x: -0.06330789, y: 0.0021997017, z: -0.051456265, w: 0.99666417}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandPinky2
+      parentName: swat:RightHandPinky1
+      position: {x: 0.036528, y: 0, z: 0}
+      rotation: {x: 0.00000032037505, y: 0.00066345994, z: -0.008154586, w: 0.99996656}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandPinky3
+      parentName: swat:RightHandPinky2
+      position: {x: 0.02782, y: 0, z: 0}
+      rotation: {x: 0.00000027909002, y: 0.0010130903, z: -0.012434533, w: 0.9999222}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightHandPinky4
+      parentName: swat:RightHandPinky3
+      position: {x: 0.022767, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftUpLeg
+      parentName: swat:Hips
+      position: {x: -0.096338, y: -0.032732997, z: 0}
+      rotation: {x: -0.049869552, y: -0.15950412, z: -0.07400972, w: 0.9831552}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftLeg
+      parentName: swat:LeftUpLeg
+      position: {x: 0.000065, y: -0.41761902, z: -0.0057419995}
+      rotation: {x: 0.27758986, y: 0.037678517, z: -0.005445079, w: 0.95994514}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftFoot
+      parentName: swat:LeftLeg
+      position: {x: -0.000065, y: -0.39147997, z: -0.02002}
+      rotation: {x: 0.012575666, y: 0.61918443, z: -0.40040702, w: 0.6753715}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftToeBase
+      parentName: swat:LeftFoot
+      position: {x: 0.001833, y: -0.121857, z: 0.082823}
+      rotation: {x: -0.05241176, y: -0.0000000068073596, z: -0.00000007002225, w: 0.9986256}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:LeftFootToeBase_End
+      parentName: swat:LeftToeBase
+      position: {x: -0, y: 0, z: 0.118}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightUpLeg
+      parentName: swat:Hips
+      position: {x: 0.096338, y: -0.032732997, z: 0}
+      rotation: {x: -0.06946045, y: -0.0148872435, z: -0.014494171, w: 0.99736834}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightLeg
+      parentName: swat:RightUpLeg
+      position: {x: 0.000065, y: -0.41761798, z: -0.005786}
+      rotation: {x: 0.32533026, y: -0.07819883, z: 0.0021872038, w: 0.942359}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightFoot
+      parentName: swat:RightLeg
+      position: {x: -0.000065, y: -0.391482, z: -0.019977}
+      rotation: {x: -0.3432552, y: 0.0013614368, z: -0.029809264, w: 0.9387681}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightToeBase
+      parentName: swat:RightFoot
+      position: {x: 0.001833, y: -0.121857, z: 0.082823}
+      rotation: {x: -0.09561293, y: -0.000000029294148, z: 0.0000000033811662, w: 0.9954186}
+      scale: {x: 1, y: 1, z: 1}
+    - name: swat:RightFootToeBase_End
+      parentName: swat:RightToeBase
+      position: {x: -0.000032, y: 0, z: 0.118}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -87,13 +440,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
