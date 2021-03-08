@@ -7,6 +7,9 @@ public class AnimationHandler : MonoBehaviour
 {
     private Animator animator;
     private NavMeshAgent agent;
+
+    //public bool canWalk = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +20,15 @@ public class AnimationHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool isMoving = agent.velocity.magnitude>0;
-        animator.SetBool("isMoving",isMoving);
+        bool isWalking = agent.velocity.magnitude>0;
+        animator.SetBool("isMoving",isWalking);
+    }
+
+    public void fireWeapon() {
+        //animator.SetBool("isShooting",true);
+    }
+
+    public void Death() {
+        animator.SetBool("dead",true);
     }
 }
