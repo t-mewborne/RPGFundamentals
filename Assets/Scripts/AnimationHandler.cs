@@ -28,6 +28,11 @@ public class AnimationHandler : MonoBehaviour
         //animator.SetBool("isShooting",true);
     }
 
+    public void pickUp() {
+        //animator.SetBool("pickup",true);
+        animator.SetTrigger("pickup");
+    }
+
     public void Death() {
         animator.SetBool("dead",true);
     }

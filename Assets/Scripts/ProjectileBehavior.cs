@@ -19,9 +19,8 @@ public class ProjectileBehavior : MonoBehaviour
     void OnTriggerEnter(Collider collision) {
         if (collision.gameObject.tag=="Enemy") {
             collision.gameObject.GetComponent<EnemyController>().Kill();
-            Debug.Log("ow");
-            
+            Removeme();
         }
-        Removeme();
+        
     }
 }

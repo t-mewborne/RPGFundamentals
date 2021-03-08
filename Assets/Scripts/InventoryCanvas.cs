@@ -8,6 +8,7 @@ public class InventoryCanvas : MonoBehaviour
     public PlayerControls player;
     private Canvas CanvasObject;
     public TMP_Text bulletCount; 
+    public TMP_Text cubeCount; 
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,6 @@ public class InventoryCanvas : MonoBehaviour
              CanvasObject.enabled = !CanvasObject.enabled;
          }
         bulletCount.text = "x"+player.ammo;
-
+        cubeCount.text = "x"+player.cubes;
     }
 }

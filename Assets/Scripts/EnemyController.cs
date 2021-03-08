@@ -8,7 +8,6 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
 
-    bool isMoving = false;
     bool isAlive = true;
     public GameObject player;
     public GameObject rewardObject;
